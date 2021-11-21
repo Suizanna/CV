@@ -12,19 +12,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">  
-            <!-- КНОПКА-МЕНЮ-->
-        <div class="container-mobile">
-            <button type="button" 
-            class="menu-btn is-open" 
-            aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                    <use class="icon-cross" href="./img/sprite.svg.svg#icon-cross"></use>
+    <header class="header">
+        <div class="header-mobile">     
+            <a class="logo-nav link" href="#" aria-label="логотип сайта"><span class="span-logo">My </span>Resume</a>
+                <button type="button" class="header__button is-open" data-menu-button aria-controls="mobile-menu">
+                    <svg width="40p" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./img/sprite.svg.svg#icon-cross"></use>
                     <use class="icon-menu" href="./img/sprite.svg.svg#icon-menu"></use>
-                </svg>
-            </button>
+                    </svg>
+                </button>
+                <div class="mobile-menu " data-menu id="mobile-menu">
+                    <p  class="contacts">Contacts</p>
+                    <ul class="contacts list">
+                        <li class="contacts-item">
+                            <a class="contacts-link link" href="mailto:maksimova2021@gmail.com">
+                                <svg class="contacts-icon" width="16" height="12">
+                                  <use href="./img/sprite.svg.svg#icon-envelope"></use>
+                                </svg>
+                                maksimova2021@gmail.com
+                            </a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link link" href="tel:+380971367521">
+                                <svg class="contacts-icon" width="10" height="16">
+                                    <use href="./img/sprite.svg.svg#icon-Mobile"></use>
+                                </svg>
+                            +38 097 136 75 21
+    
+                            </a>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contacts-link link" href="https://github.com/Suizanna">
+                                <img class="contacts-icon" src="https://img.icons8.com/small/16/000000/github.png" />
+                                https://github.com/Suizanna
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
+  
 <div class="main-container">
     <div class="main-content-section">
             <!-- about-me -->
@@ -143,7 +170,7 @@
     <img class="photo" src="img/photo2.JPG" alt="my photo">
     <!-- contacts -->
     <div class="contacts-section">
-        <h3 class="sidebar-title">Contacts</h3>  
+        <h3 class="sidebar-title">Contacts</h3>       
         <div>
             <span class="contacts-section-type">C:</span>
             <a class="contacts-section-link" href="tel:+380971367521">+38 097 136 75 21</a>

@@ -15,7 +15,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  padding: 40px;
   background-color: var(--primaryBgColor);
   color: var(--primaryTextColor);
 }
@@ -52,12 +51,12 @@ a {
   text-decoration: none;
 }
 
-/* MOBILE */
+/* ============ MOBILE ================ */
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header {
     position: relative;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid hsl(0, 0%, 93%);
   }
   .header-mobile {
     display: flex;
@@ -105,12 +104,12 @@ a {
     z-index: 1;
     top: 100%;
     left: 0;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
   }
   .mobile-menu.is-open {
     display: block;
+    width: 100%;
   }
 
   /* contacts */
@@ -149,6 +148,7 @@ a {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-left: 10px;
   }
 
   .logo-nav {
@@ -321,7 +321,7 @@ a {
   }
 }
 
-/* TABLET $ DECSTOP */
+/* ============= TABLET $ DECSTOP ================= */
 
 @media screen and (min-width: 768px) {
   .header-mobile {
@@ -334,9 +334,9 @@ a {
     display: none;
   }
 
-  .main-container {
+  .container-main {
     width: 100%;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row-reverse;
     margin: 40px auto;
@@ -489,7 +489,7 @@ a {
     color: #595959;
   }
 
-  /* sidebar */
+  /* ============ SIDEBAR ============ */
 
   .sidebar-section {
     width: 370px;
